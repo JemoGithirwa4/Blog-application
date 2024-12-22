@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Edit Post</h1>
+<form action="/edit" method="POST">
+    <!-- Hidden input to pass the original title -->
+    <input type="hidden" name="oldTitle" value="<%= post.title %>">
+    
+    <div class="form-group">
+        <label for="newTitle">Title</label>
+        <input type="text" class="form-control" id="newTitle" name="newTitle" value="<%= post.title %>">
+    </div>
+    
+    <div class="form-group">
+        <label for="newContent">Content</label>
+        <textarea id="newContent" class="form-control" name="newContent" rows="8" cols="30"><%= post.content %></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-success submit">Update</button>
+</form>
+
+<%- include("partials/footer.ejs") %>

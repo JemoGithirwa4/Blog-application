@@ -1,0 +1,111 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+p {
+  color: grey;
+  text-align: left;
+}
+
+h1 {
+  color: #3586ff;
+}
+
+label {
+  font-weight: bold;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+form {
+  margin-top: 50px;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+.submit {
+  width: 100%;
+  background: #3586ff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+.submit:hover {
+  background: #3586ff;
+}
+
+.my-btn {
+  width: 100%;
+  background: #3586ff;
+}
+
+.delete {
+  margin: 0;
+}
+
+.un-av {
+  color: red;
+}
+
+.ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.ul li {
+  background: #3586ff; 
+  color: white; 
+  font-size: 16px; 
+  padding: 10px 15px; 
+  margin: 10px 0; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background 0.3s, transform 0.2s; 
+}
+
+.ul li:hover {
+  background: #3069d4; 
+  transform: translateY(-3px); 
+  cursor: pointer; 
+}
+
+.ul li:before {
+  content: "✔"; 
+  color: #ffff00;
+  margin-right: 10px;
+  font-weight: bold; 
+}

@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+  <h1>My Posts</h1>
+
+  <% if (posts.length === 0) { %>
+    <p>No posts available. <i class="fa-solid fa-ban un-av"></i>Create your first post!</p>
+    <a href="/posts" class="btn btn-primary">Create Post</a>
+  <% } else { %>
+    <% posts.forEach(post => { %>
+      <h2><%= post.title %></h2>
+      <p class="post"><%= post.content.substring(0, 100) + " ..." %>
+        <a href="/posts/<%= post.title%>" class="btn btn-link">Read More</a>
+        <a href="/edit/<%= encodeURIComponent(post.title) %>" class="btn btn-link">Edit</a>
+        <form class="delete" action="/delete" method="POST">
+          <input type="hidden" name="postTitle" value="<%= post.title %>">
+          <button type="submit" class="btn btn-secondary my-btn">Delete</button>
+      </form>
+      </p>
+    <% }) %>
+    <% } %>
+
+  <%- include("partials/footer.ejs") %>
