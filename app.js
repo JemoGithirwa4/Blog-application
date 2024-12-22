@@ -2,6 +2,8 @@ import express from "express";
 import bodyParser  from "body-parser";
 import _ from 'lodash';
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -83,6 +85,6 @@ app.post("/edit", (req, res) => {
     res.redirect("/"); // Redirect to home page
 });
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000!");
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 })
