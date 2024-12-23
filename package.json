@@ -5,7 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm install"
   },
   "author": "James Wainaina Githirwa",
   "license": "ISC",
@@ -14,5 +15,9 @@
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "lodash": "^4.17.21"
-  }
+  },
+  "engines": {
+    "node": "16.x"
+}
+
 }
