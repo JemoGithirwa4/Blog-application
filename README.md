@@ -14,7 +14,7 @@
 
 ## Overview
 This is a **Blog Web Application** created using **Node.js**, **Express.js**, and **EJS**. 
-![Homepage Screenshot](public/images/home.png)
+![Homepage Screenshot](public/images/home.PNG)
 It allows users to:
 - Create new blog posts.
 - View existing blog posts.
