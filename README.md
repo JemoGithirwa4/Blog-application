@@ -30,16 +30,18 @@ Please note that this is a basic version of the application where:
 ## Demo
 - To Create a post, click "Create Post" button or click at the nav link "Posts", a user friendly form for creating the post will be displayed.
 ![Post form Screenshot](public/images/posts.PNG)
-- Fill in the post details then click "Submit".
+- Fill in the post details then click "Publish".
 ![Sample Post details Screenshot](public/images/samplepost.PNG)
 - Blog posts are dynamically rendered using EJS.
 ![Sample Post display Screenshot](public/images/post1.PNG)
 - To read the post click "Read More".
-![Sample Post Screenshot](public/images/samplepost.PNG)
+![Sample Post Screenshot](public/images/readpost.PNG)
 - To edit the post click "Edit".
 ![Sample Post Screenshot](public/images/edit.PNG)
 - Edit the post then click "Update".
-- Responsive design to ensure the application looks great on any device.
+- To delete a post click "Delete and it will be deleted".
+- More and more posts can be added. However, the posts don't persist as a database has not been configured.
+- Responsive design has been to ensure the application looks great on any device.
 
 ---
 
