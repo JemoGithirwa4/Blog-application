@@ -27,8 +27,9 @@ Please note that this is a basic version of the application where:
 
 ---
 
-## Features
-- Create a new blog post using a simple and user-friendly form.
+## Demo
+- To Create a post, click "Create Post" button or click at the nav link "Posts", a user friendly form for creating the post will be displayed.
+![Homepage Screenshot](public/images/posts.PNG)
 - View blog posts dynamically rendered using EJS.
 - Responsive design to ensure the application looks great on any device.
 
